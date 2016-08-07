@@ -1,0 +1,19 @@
+<h2 class="text-center">Profile information</h2>
+<div ng-init="loadUserDetails()" class="home profile content">
+    <div class="row">
+        <div class="col-xs-12 col-md-4">Fullname:</div>
+        <div class="col-xs-12 col-md-8">{{user.fullname}}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-4">Date of Birth:</div>
+        <div class="col-xs-12 col-md-8">{{user.dateOfBirth | date:'MMM d, y'}}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-4">Sex:</div>
+        <div class="col-xs-12 col-md-8">{{user.sex}}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-4">About yourself:</div>
+        <div class="col-xs-12 col-md-8">{{user.aboutYourself}}</div>
+    </div>
+</div>

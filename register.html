@@ -1,0 +1,47 @@
+<form class="form-register" name="registerForm" ng-submit="createUser(registerForm)" novalidate>
+<h2 class="text-center">Register to webapp</h2>
+<div class="content">
+    <div class="form-group">
+        <label for="fullname">Fullname</label>
+        <input type="text" name="fullname" id="fullname" ng-model="fullname" class="form-control" required>
+    </div>
+   <div class="form-group">
+        <label for="dateOfBirth">Date of Birth</label>
+        <input type="date" name="dateOfBirth" id="dateOfBirth" ng-model="dateOfBirth" class="form-control" required placeholder="yyyy-mm-dd">
+    </div>
+    <div class="form-group">
+        <label for="sex">Sex</label>
+        <select name="sex" ng-model="sex" id="sex" class="form-control" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+   <div class="form-group">
+        <label for="aboutYourself">About yourself</label>
+         <textarea name="aboutYourself" class="form-control" id="aboutYourself" ng-model="aboutYourself" cols="30" rows="5" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="userId">UserId</label>
+        <input type="text" name="userId" id="userId" ng-model="userId" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" ng-model="password" class="form-control" required>
+    </div>
+     <p class="error" ng-show="registerFormSubmitted && registerForm.fullname.$error.required">
+    full name is required</p>
+    <p class="error" ng-show="registerFormSubmitted && registerForm.dateOfBirth.$error.required">
+    Date of birth is required</p>
+    <p class="error" ng-show="registerFormSubmitted && registerForm.dateOfBirth.$error.date">
+    Not a valid date in Date of Birth field</p>
+     <p class="error" ng-show="registerFormSubmitted && registerForm.sex.$error.required">
+    Sex is required</p>
+    <p class="error" ng-show="registerFormSubmitted && registerForm.aboutYourself.$error.required">
+    About yourself is required</p>
+    <p class="error" ng-show="registerFormSubmitted && registerForm.userId.$error.required">
+    UserId is required</p>
+    <p class="error" ng-show="registerFormSubmitted && registerForm.password.$error.required">
+    Password is required</p>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+</div>
+</form>

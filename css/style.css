@@ -1,0 +1,52 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-signin, .form-register {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-register {
+  max-width: 530px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.home {
+  max-width: 530px;
+  margin: 0 auto;
+}
+
+.error {
+  color: red;
+}
+
+.form-label {
+  display: block;
+  font-weight: normal;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.form-register .form-group label {
+  font-weight: normal;
+}
+
+.content {
+  border:1px solid #d8dee2;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.profile {
+  font-size: 16px;
+}
+
+.profile .row {
+  margin: 10px auto;
+  border-bottom: 1px solid #e4e6e8;
+  padding: 5px 0;
+}
